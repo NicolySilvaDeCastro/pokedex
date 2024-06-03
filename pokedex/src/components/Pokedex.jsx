@@ -26,15 +26,16 @@ export default function Pokedex(){
     }, [id])
     //useEffect
 
+       const antesPokemon = () => {
+        if(id > 1){
+            setId(id - 1)
+        }
+       
+    }
         const nextPokemon = () =>{
             setId(id + 1)
         }
-        const antesPokemon = () => {
-            if(id > 1){
-                setId(id - 1)
-            }
-           
-        }
+
 
     return(
         <div className="card">
